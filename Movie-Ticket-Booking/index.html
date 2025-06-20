@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Seat Booking</title>
+  <link rel="stylesheet" href="style.css">
+  <!--<link rel="stylesheet" href="styles.css">-->
+</head>
+<body class="backgroundcolorindex">
+  <div class="container">
+    <h1>Movie Seat Booking</h1>
+    <div class="movie-container">
+      <label for="movie">Pick a movie:</label>
+      <select id="movie">
+        <option value="210">Avengers: Endgame (Rs. 210)</option>
+        <option value="200">Joker (Rs. 200)</option>
+        <option value="180">Spider-Man: No Way Home (Rs. 180)</option>
+        <option value="220">Dune (Rs. 220)</option>
+        <option value="150">Black Widow (Rs. 150)</option>
+        <option value="170">The Batman (Rs. 170)</option>
+        <option value="160">Shang-Chi (Rs. 160)</option>
+      </select>
+    </div>
+
+    <!-- Curved screen section -->
+    <div class="screen"></div>
+
+    <!-- Lower and Balcony Section Picker -->
+    <div class="section-picker">
+      <button id="lowerSectionBtn" class="section-btn active">Lower Section</button>
+      <button id="balconySectionBtn" class="section-btn">Balcony</button>
+    </div>
+
+    <!-- Lower Section -->
+    <div class="section" id="lowerSection">
+      <h3>Lower Section (500 seats)</h3>
+      <div id="lower-seating" class="seating-area"></div>
+    </div>
+
+    <!-- Balcony Section -->
+    <div class="section" id="balconySection" style="display:none;">
+      <h3>Balcony Section (200 seats)</h3>
+      <div id="balcony-seating" class="seating-area"></div>
+    </div>
+
+    <p class="text">
+      You have selected <span id="count">0</span> seats for a total of Rs. <span id="total">0</span>.
+    </p>
+  </div>
+
+  <center>
+    <div class="button-container">
+        <a href="payment.html" class="payment-button">Proceed to Payment</a>
+    </div>
+  </center>
+
+  <script src="script.js"></script>
+</body>
+</html>
